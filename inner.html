@@ -32,25 +32,39 @@
     </header>
     <main>
       <section class="choose">
-        <!--разметить форму после 4го вебинара-->
-        <div class="choose-infrastructure">
-          <p>инфраструктура</p>
-          бассейн
-          парковка
-          wifi
-        </div>
-        <div class="choose-type">
-          <p>тип жилья</p>
-          гостинница
-          мотель
-          апартаменты
-        </div>
-        <div class="choose-price">
-          <p>стоимоть в сутки(р):</p>
-          от 0
-          до 3000
-          показать
-        </div>
+        <form class="infrastructure-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="choose-infrastructure">
+            <p>инфраструктура</p>
+            <input type="checkbox" name="swimming-pool" id="swimming-pool">
+            <label for="swimming-pool">Бассейн</label>
+
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Паркинг</label>
+
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">wi-fi</label>
+          </div>
+          <div class="choose-type">
+            <p>Тип жилья</p>
+            <input type="checkbox" name="hostel" id="hostel">
+            <label for="hostel">гостинница</label>
+
+            <input type="checkbox" name="motel" id="motel">
+            <label for="motel">мотель</label>
+
+            <input type="checkbox" name="apartments" id="apartments">
+            <label for="apartments">апартаменты</label>
+          </div>
+          <div class="choose-price">
+            <p>стоимоть в сутки(р):</p>
+            <p>от 0</p>
+            <p>до 3000<p>
+            <!--<label>
+              <input type="range" name="">
+            </label>-->
+            <input type="submit" value="показать">
+          </div>
+        </form>
       </section>
       <div class="sort">
         <b>Найдено: 3</b>
@@ -58,9 +72,12 @@
         <a href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По рейтингу</a>
-        <!--ссылки для треугольничков-->
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="#">
+          <img src="img/icon-up-dir.svg">
+        </a>
+        <a href="#">
+          <img src="img/icon-down-dir.svg">
+        </a>
       </div>
       <section class="hotels">
         <h1 class="visually-hidden">Отели Седоны</h1>
@@ -125,9 +142,9 @@
         <span>#VISITSEDONA</span>
       </div>
       <section class="footer-social">
-        <a class="social-btn" href="#">Twitter</a>
-        <a class="social-btn" href="#">Facebook</a>
-        <a class="social-btn" href="#">YouTube</a>
+        <a class="social-btn visually-hidden" href="#">Twitter</a>
+        <a class="social-btn visually-hidden" href="#">Facebook</a>
+        <a class="social-btn visually-hidden" href="#">YouTube</a>
       </section>
       <div class="footer-copyright">
         <p>websity by</p>

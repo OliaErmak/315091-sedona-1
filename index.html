@@ -85,7 +85,7 @@
           <div class="feature-three">
             <b class="reason-name">Мало туристов</b>
             <p>- №5 -</p>
-            <p>Большиснтво едет в гранд каньон и толпится там</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
           </div>
         </section>
       </div>
@@ -96,6 +96,47 @@
           <h2 class="visually-hidden">Карта Седоны</h2>
           <img src="img/map.jpg" width="1200" height="593" alt="Place where hostel located">
         </section>
+        <div class="search-hotel">
+          <b>поиск гостиницы в седоне</b>
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="search-form-group">
+              <label for="date-in">Дата заезда:</label>
+                <input type="text" name="arrival-data" id="data-in">
+                <!--ссылка или кнопка-->
+                <a href="#">
+                  <img src="img/calendar.svg" alt="Выберите дату заезда">
+                </a>
+            </div>
+            <div class="search-form-group">
+              <label for="data-out">Дата выезда:</label>
+              <input type="text" name="data-out" id="data-out">
+              <a href="#">
+                <img src="img/calendar.svg" alt="Выберите дату заезда">
+              </a>
+            </div>
+            <div class="search-form-group">
+              <button class="btn-adult" type="button">
+                <img src="img/minus.png" alt="Уменьшить количество взрослых">
+              </button>
+              <label for="adults">взрослые:</label>
+              <input type="text" name="adults" id="adults">
+              <button class="btn-adult" type="button">
+                <img src="img/plus.png" alt="Увеличить количество взрослых">
+              </button>
+            </div>
+            <div class="search-form-group">
+              <button class="btn-kids" type="button">
+                <img src="img/minus.png" alt="Уменьшить количество детей">
+              </button>
+              <label for="kids">дети:</label>
+              <input type="text" name="kids" id="kids">
+              <button class="btn-kids" type="button">
+                <img src="img/plus.png" alt="Увеличить количество детей">
+              </button>
+            </div>
+            <input type="submit" value="найти">
+          </form>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -103,9 +144,9 @@
         <span>#VISITSEDONA</span>
       </div>
       <section class="footer-social">
-        <a class="social-btn" href="#">Twitter</a>
-        <a class="social-btn" href="#">Facebook</a>
-        <a class="social-btn" href="#">YouTube</a>
+        <a class="social-btn visually-hidden" href="#">Twitter</a>
+        <a class="social-btn visually-hidden" href="#">Facebook</a>
+        <a class="social-btn visually-hidden" href="#">YouTube</a>
       </section>
       <div class="footer-copyright">
         <p>websity by</p>
