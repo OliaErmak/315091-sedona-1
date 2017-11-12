@@ -25,14 +25,14 @@
         </ul>
         <div class="nav-logo">
           <a href="#">
-            <img src="img/logo.png" width="138" height="70" alt="Go to main page">
+            <img src="img/logo.png" width="138" height="70" alt="Главная страница">
           </a>
         </div>
       </nav>
     </header>
     <main>
       <div class="sedona-logo">
-        <img src="img/title.png" width="458" height="352" alt="Sedona's Logo">
+        <img src="img/title.png" width="458" height="352" alt="Логотип Седоны">
       </div>
       <div class="title">
         <h1 class="visually-hidden">Седона</h1>
@@ -47,7 +47,7 @@
             <p>- №1 -</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img src="img/viewsedona1.jpg" width="800" height="401" alt="Sedona's view">
+          <img src="img/viewsedona1.jpg" width="800" height="401" alt="Фотография вида Седоны">
         </section>
         <section class="advice">
           <div class="advice-item">
@@ -69,7 +69,7 @@
             <p>- №2 -</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          <img src="img/viewsedona2.jpg" width="800" height="400" alt="Sedonas view">
+          <img src="img/viewsedona2.jpg" width="800" height="400" alt="Фотография вида Седоны">
         </section>
         <section class="features">
           <div class="feature-three">
@@ -94,45 +94,32 @@
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостинниц в седоне</p>
         <section class="map">
           <h2 class="visually-hidden">Карта Седоны</h2>
-          <img src="img/map.jpg" width="1200" height="593" alt="Place where hostel located">
+          <img src="img/map.jpg" width="1200" height="593" alt="Карта окрестностей Седоны">
         </section>
+        <a href="#">поиск гостиницы в седоне</a>
         <div class="search-hotel">
-          <b>поиск гостиницы в седоне</b>
-          <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="search-form-group">
               <label for="date-in">Дата заезда:</label>
                 <input type="text" name="arrival-data" id="data-in">
-                <!--ссылка или кнопка-->
-                <a href="#">
-                  <img src="img/calendar.svg" alt="Выберите дату заезда">
-                </a>
+                <button class="calendar" type="button" name="calendar"><span class="visually-hidden">календарь</span></button>
             </div>
             <div class="search-form-group">
               <label for="data-out">Дата выезда:</label>
               <input type="text" name="data-out" id="data-out">
-              <a href="#">
-                <img src="img/calendar.svg" alt="Выберите дату заезда">
-              </a>
+              <button class="calendar" type="button" name="calendar"><span class="visually-hidden">календарь</span></button>
             </div>
             <div class="search-form-group">
-              <button class="btn-adult" type="button">
-                <img src="img/minus.png" alt="Уменьшить количество взрослых">
-              </button>
+              <button class="btn-adult" type="button"><span class="visually-hidden">-</span></button>
               <label for="adults">взрослые:</label>
               <input type="text" name="adults" id="adults">
-              <button class="btn-adult" type="button">
-                <img src="img/plus.png" alt="Увеличить количество взрослых">
-              </button>
+              <button class="btn-adult" type="button"><span class="visually-hidden">+</span></button>
             </div>
             <div class="search-form-group">
-              <button class="btn-kids" type="button">
-                <img src="img/minus.png" alt="Уменьшить количество детей">
-              </button>
+              <button class="btn-kids" type="button"><span class="visually-hidden">-</span></button>
               <label for="kids">дети:</label>
               <input type="text" name="kids" id="kids">
-              <button class="btn-kids" type="button">
-                <img src="img/plus.png" alt="Увеличить количество детей">
-              </button>
+              <button class="btn-kids" type="button"><span class="visually-hidden">+</span></button>
             </div>
             <input type="submit" value="найти">
           </form>
@@ -144,9 +131,9 @@
         <span>#VISITSEDONA</span>
       </div>
       <section class="footer-social">
-        <a class="social-btn visually-hidden" href="#">Twitter</a>
-        <a class="social-btn visually-hidden" href="#">Facebook</a>
-        <a class="social-btn visually-hidden" href="#">YouTube</a>
+        <a class="social-btn" href="#"><span class="visually-hidden">Twitter</span></a>
+        <a class="social-btn" href="#"><span class="visually-hidden">Facebook</span></a>
+        <a class="social-btn" href="#"><span class="visually-hidden">YouTube</span</a>
       </section>
       <div class="footer-copyright">
         <p>websity by</p>

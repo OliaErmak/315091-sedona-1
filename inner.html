@@ -25,27 +25,27 @@
         </ul>
         <div class="nav-logo">
           <a href="#">
-            <img src="img/logo.png" width="138" height="70" alt="Go to main page">
+            <img src="img/logo.png" width="138" height="70" alt="Главная страница">
           </a>
         </div>
       </nav>
     </header>
     <main>
       <section class="choose">
-        <form class="infrastructure-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="infrastructure-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="choose-infrastructure">
             <p>инфраструктура</p>
             <input type="checkbox" name="swimming-pool" id="swimming-pool">
             <label for="swimming-pool">Бассейн</label>
 
             <input type="checkbox" name="parking" id="parking">
-            <label for="parking">Паркинг</label>
+            <label for="parking">паркинг</label>
 
             <input type="checkbox" name="wi-fi" id="wi-fi">
             <label for="wi-fi">wi-fi</label>
           </div>
           <div class="choose-type">
-            <p>Тип жилья</p>
+            <p>тип жилья</p>
             <input type="checkbox" name="hostel" id="hostel">
             <label for="hostel">гостинница</label>
 
@@ -56,12 +56,12 @@
             <label for="apartments">апартаменты</label>
           </div>
           <div class="choose-price">
-            <p>стоимоть в сутки(р):</p>
+            <p>стоимоcть в сутки(р):</p>
             <p>от 0</p>
             <p>до 3000<p>
-            <!--<label>
-              <input type="range" name="">
-            </label>-->
+            <label>
+              <input type="range" name="choose-price">
+            </label>
             <input type="submit" value="показать">
           </div>
         </form>
@@ -72,17 +72,13 @@
         <a href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По рейтингу</a>
-        <a href="#">
-          <img src="img/icon-up-dir.svg">
-        </a>
-        <a href="#">
-          <img src="img/icon-down-dir.svg">
-        </a>
+        <a href="#"><span class="visually-hidden">стрелка вверх</span></a>
+        <a href="#"><span class="visually-hidden">стрелка вниз</span></a>
       </div>
       <section class="hotels">
         <h1 class="visually-hidden">Отели Седоны</h1>
         <article class="home">
-          <img src="img/amara-hotel.jpg" width="136" height="90" alt="Hostel's photo">
+          <img src="img/amara-hotel.jpg" width="136" height="90" alt="Отель Амара">
           <div class="home-variant">
             <h2>AMARA RESORT & SPA</h2>
             <div class="variant-description">
@@ -100,7 +96,7 @@
           </div>
         </article>
         <article class="home">
-          <img src="img/desert-hotel.jpg" width="136" height="90" alt="Hostel's photo">
+          <img src="img/desert-hotel.jpg" width="136" height="90" alt="Отель Десерт">
           <div class="home-variant">
             <h2>DESERT QUAIL INN</h2>
             <div class="variant-description">
@@ -118,7 +114,7 @@
           </div>
         </article>
         <article class="home">
-          <img src="img/villas-hotel.jpg" width="136" height="90" alt="Hostel's photo">
+          <img src="img/villas-hotel.jpg" width="136" height="90" alt="Отель Виллас">
           <div class="home-variant">
             <h2>VILLAS AT POCO DIABLO</h2>
             <div class="variant-description">
@@ -142,14 +138,14 @@
         <span>#VISITSEDONA</span>
       </div>
       <section class="footer-social">
-        <a class="social-btn visually-hidden" href="#">Twitter</a>
-        <a class="social-btn visually-hidden" href="#">Facebook</a>
-        <a class="social-btn visually-hidden" href="#">YouTube</a>
+        <a class="social-btn" href="#"><span class="visually-hidden">Twitter</span></a>
+        <a class="social-btn" href="#"><span class="visually-hidden">Facebook</span></a>
+        <a class="social-btn" href="#"><span class="visually-hidden">YouTube</span</a>
       </section>
       <div class="footer-copyright">
         <p>websity by</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/academy-logo.png" width="115" height="41" alt="HTML Academy logo">
+          <img src="img/academy-logo.png" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
