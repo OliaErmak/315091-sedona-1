@@ -1,0 +1,310 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #000000;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*header*/
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation:hover,
+.site-navigation:focus {
+  background-color: #ffffff;
+}
+
+/*main*/
+
+.visually-hidden {
+ 	  position: absolute;
+ 	  width: 1px;
+ 	  height: 1px;
+ 	  margin: -1px;
+ 	  border: 0;
+ 	  padding: 0;
+ 	  clip: rect(0 0 0 0);
+ 	  overflow: hidden;
+ }
+
+.sedona-logo {
+  background-image: url("../img/background-index.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.title {
+  background-color: #ffffff;
+}
+
+.title b {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 26px;
+  text-align: center;
+}
+
+.features,
+.advice-item {
+  text-align: center;
+}
+
+.feature-one,
+.feature-two {
+  background-color: #81b3d2;
+}
+
+.feature-one b,
+.feature-two b {
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+}
+
+.feature-one p,
+.feature-two p {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advice {
+  background-color: #ffffff;
+}
+
+.advice b {
+  font-size: 21px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advice p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 21px;
+  text-align: center;
+}
+
+.index-column {
+  background-color: #eeeeee;
+}
+
+.feature-three b {
+  font-size: 21px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+}
+
+.feature-three p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 21px;
+  text-align: center;
+}
+
+.interest {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.interest b {
+  font-size: 30px;
+  color: #000000;
+  line-height:36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.interest p {
+  font-size: 14px;
+  color: #333333;
+  line-height:24px;
+  text-align: center;
+}
+
+.search-hotel {
+  background-color: #ffffff;
+}
+
+.form-date-in {
+  font-size: 14px;
+  color: #000000;
+  line-height:26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.form-date-in:hover {
+  background-color: #ebebeb;
+}
+
+.form-date-in:focus {
+  background-color: #ffffff;
+}
+
+.form-date-out {
+  font-size: 14px;
+  color: #000000;
+  line-height:26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.form-date-out:hover {
+  background-color: #ebebeb;
+}
+
+.form-date-out:focus {
+  background-color: #ffffff;
+}
+
+.form-adults {
+  font-size: 14px;
+  color: #000000;
+  line-height:26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.form-adults:hover {
+  background-color: #ebebeb;
+}
+
+.form-adults:focus {
+  background-color: #ffffff;
+}
+
+.form-kids {
+  font-size: 14px;
+  color: #000000;
+  line-height:26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.form-kids:hover {
+  background-color: #ebebeb;
+}
+
+.form-kids:focus {
+  background-color: #ffffff;
+}
+
+/*.btn-adult {
+  font-size: 14px;
+  color: #000000;
+  line-height:26px;
+  font-weight: bold;
+  background-color:#a9a9a9;
+}
+
+.btn-adult:hover {
+  background-color: #000000;
+}
+
+.btn-adult:focus {
+  background-color: #81b3d2;
+}
+
+.btn-kids {
+  font-size: 14px;
+  color: #000000;
+  line-height:26px;
+  font-weight: bold;
+  background-color:#a9a9a9;
+}
+
+.btn-kids:hover {
+  background-color: #000000;
+}
+
+.btn-kids:focus {
+  color: #81b3d2;
+}*/
+
+.form-search-button {
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.form-search-button:hover {
+  background-color: #669ec0;
+}
+
+.form-search-button:focus {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.interest a {
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  background-color: #766357;
+}
+
+.interest a:hover {
+  background-color: #604e43;
+}
+
+.interest a:focus {
+  background-color: #503e33;
+  color: #928a85;
+}

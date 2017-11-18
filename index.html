@@ -5,11 +5,12 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <ul>
+        <ul class="site-navigation">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -40,7 +41,7 @@
         <p>Рассмотрим 5 причин, почему седона круче, чем гранд каньон!</p>
       </div>
       <div class="advantages">
-        <h2>Преимущества Седоны</h2>
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <section class="features">
           <div class="feature-one">
             <b class="feature-name">Настоящий городок</b>
@@ -71,26 +72,28 @@
           </div>
           <img src="img/viewsedona2.jpg" width="800" height="400" alt="Фотография вида Седоны">
         </section>
-        <section class="features">
-          <div class="feature-three">
-            <b class="feature-name">Небольшая площадь</b>
-            <p>- №3 -</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="feature-three">
-            <b class="feature-name">Красивая дорога</b>
-            <p>- №4 -</p>
-            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-          </div>
-          <div class="feature-three">
-            <b class="reason-name">Мало туристов</b>
-            <p>- №5 -</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </div>
-        </section>
+        <div class="index-column">
+          <section class="features">
+            <div class="feature-three">
+              <b class="feature-name">Небольшая площадь</b>
+              <p>- №3 -</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="feature-three">
+              <b class="feature-name">Красивая дорога</b>
+              <p>- №4 -</p>
+              <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </div>
+            <div class="feature-three">
+              <b class="reason-name">Мало туристов</b>
+              <p>- №5 -</p>
+              <p>Большинство едет в гранд каньон и толпится там</p>
+            </div>
+          </section>
+        </div>
       </div>
       <div class="interest">
-        <p>Заинтересовались?</p>
+        <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <section class="map">
           <h2 class="visually-hidden">Карта Седоны</h2>
@@ -101,27 +104,27 @@
           <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="search-form-group">
               <label for="date-in">Дата заезда:</label>
-                <input type="text" name="arrival-data" id="data-in" value="24 апреля 2016">
-                <button class="calendar" type="button"><span class="visually-hidden">календарь</span></button>
+              <input class="form-date-in" type="text" name="date-in" id="date-in" value="24 апреля 2016">
+              <button class="calendar" type="button"><span class="visually-hidden">календарь</span></button>
             </div>
             <div class="search-form-group">
-              <label for="data-out">Дата выезда:</label>
-              <input type="text" name="data-out" id="data-out" value="4 июля 2016">
+              <label for="date-out">Дата выезда:</label>
+              <input class="form-date-out" type="text" name="date-out" id="date-out" value="4 июля 2016">
               <button class="calendar" type="button"><span class="visually-hidden">календарь</span></button>
             </div>
             <div class="search-form-group">
               <button class="btn-adult" type="button"><span class="visually-hidden">-</span></button>
               <label for="adults">взрослые:</label>
-              <input type="text" name="adults" id="adults" value="2">
+              <input class="form-adults" type="text" name="adults" id="adults" value="2">
               <button class="btn-adult" type="button"><span class="visually-hidden">+</span></button>
             </div>
             <div class="search-form-group">
               <button class="btn-kids" type="button"><span class="visually-hidden">-</span></button>
               <label for="kids">дети:</label>
-              <input type="text" name="kids" id="kids" value="0">
+              <input class="form-kids" type="text" name="kids" id="kids" value="0">
               <button class="btn-kids" type="button"><span class="visually-hidden">+</span></button>
             </div>
-            <input type="submit" value="найти">
+            <input class="form-search-button" type="submit" value="найти">
           </form>
         </div>
       </div>
