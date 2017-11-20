@@ -79,9 +79,9 @@ a{
   list-style: none;
 }
 
-.inner-main-navigation .site-navigation a:active,
-.inner-main-navigation .site-navigation a:active:hover,
-.inner-main-navigation .site-navigation a:active:active {
+.site-navigation a.active,
+.site-navigation a.active:hover,
+.site-navigation a.active:active {
   color: #766357;
 }
 
