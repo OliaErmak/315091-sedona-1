@@ -102,6 +102,8 @@ a{
   background-image: url("../img/background-index.jpg");
   background-repeat: no-repeat;
   width: 100%;
+  text-align: center;
+
 }
 
 .title {
@@ -450,4 +452,164 @@ color: #94b9d2;
 
 .footer-copyright a:focus {
   color: #cacaca;
+}
+
+/*сеточные стили*/
+
+.container {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+   /*от хедера до логотипа седоны*/
+  /*для сетки*/
+  min-height: 56px;
+}
+
+.main-navigation {
+  min-height: 56px;
+}
+
+.site-navigation {
+     margin: 0;
+     padding: 0;
+
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+ .site-navigation li {
+   margin: auto;
+   min-width: 100px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+ }
+
+ .site-navigation li:first-of-type {
+   margin-left: 73px;
+   text-align: left;
+ }
+
+ .site-navigation li:nth-child(2) {
+   text-align: left;
+ }
+
+ .site-navigation li:last-of-type {
+   margin-left: 73px;
+ }
+
+.nav-logo {
+  width: 138px;
+  height: 70px;
+  position: absolute;
+  margin: auto;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.sedona-logo {
+     padding-top: 76px;
+     padding-bottom: 71px;
+ }
+
+.title {
+  width: 1200px;
+  min-height: 216px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title b {
+  width: 440px;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.advantages {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.features {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  height: 256px;
+  width: 100%;
+}
+
+.feature-one {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-one b {
+  margin-left: 135px;
+  margin-right: 135px;
+}
+
+.feature-one p:first-of-type {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-one p:last-of-type {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.advice {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  width: 1200px;
+  min-height: 330px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  order: 1;
+}
+
+.feature-two b {
+}
+
+.feature-two p:first-of-type {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-two p:last-of-type {
+  margin-left: 55px;
+  margin-right: 45px;
+}
+
+.features-three {
+  min-height: 256px;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
