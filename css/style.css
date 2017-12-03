@@ -122,6 +122,16 @@ a{
   text-align: center;
 }
 
+.features:first-of-type img {
+  background-image: url(../img/viewsedona1.jpg);
+  background-repeat: no-repeat;
+}
+
+.features:nth-of-type(2) img {
+  background-image: url(../img/viewsedona2.jpg);
+  background-repeat: no-repeat;
+}
+
 .features,
 .advice-item {
   text-align: center;
@@ -132,8 +142,7 @@ a{
   background-color: #81b3d2;
 }
 
-.feature-one b,
-.feature-two b {
+.feature b {
   font-size: 21px;
   line-height: 21px;
   color: #ffffff;
@@ -402,9 +411,6 @@ color: #94b9d2;
   line-height: 21px;
 }
 
-
-
-
 /*footer*/
 
 .footer {
@@ -457,8 +463,7 @@ color: #94b9d2;
 /*сеточные стили*/
 
 .container {
-  min-width: 768px;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -469,6 +474,7 @@ color: #94b9d2;
 }
 
 .main-navigation {
+  position: relative;
   min-height: 56px;
 }
 
@@ -479,26 +485,33 @@ color: #94b9d2;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
+     flex-wrap: wrap;
 }
 
  .site-navigation li {
+   width: 20%;
    margin: auto;
-   min-width: 100px;
-   padding-top: 15px;
-   padding-bottom: 15px;
+   padding: 15px 0;
  }
 
- .site-navigation li:first-of-type {
+ .site-navigation li:nth-child(4n+1) {
    margin-left: 73px;
    text-align: left;
  }
 
- .site-navigation li:nth-child(2) {
+/*паддинги*/
+ .site-navigation li:nth-child(4n+2) {
+   margin-right: auto
    text-align: left;
  }
 
- .site-navigation li:last-of-type {
-   margin-left: 73px;
+ .site-navigation li:nth-child(4n+3) {
+   text-align: right;
+ }
+
+ .site-navigation li:nth-child(4n+4){
+   text-align: right;
+   margin-right: 73px;
  }
 
 .nav-logo {
@@ -514,16 +527,12 @@ color: #94b9d2;
 }
 
 .sedona-logo {
-     padding-top: 76px;
-     padding-bottom: 71px;
+  padding-top: 76px;
+  padding-bottom: 71px;
  }
 
 .title {
-  width: 1200px;
   min-height: 216px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .title b {
@@ -546,16 +555,13 @@ color: #94b9d2;
 
   display: flex;
   flex-direction: row;
-  height: 256px;
+  min-height: 256px;
   width: 100%;
 }
 
-.feature-one {
+.feature {
   width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
+  padding: ;
 }
 
 .feature-one b {
@@ -580,20 +586,16 @@ color: #94b9d2;
   display: flex;
   width: 1200px;
   min-height: 330px;
-  justify-content: center;
-  align-items: center;
+}
+
+.advice-item {
+  width: 400px;
+  min-height: 330px;
+  padding-top: 150px;
 }
 
 .feature-two {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
   order: 1;
-}
-
-.feature-two b {
 }
 
 .feature-two p:first-of-type {
@@ -608,8 +610,66 @@ color: #94b9d2;
 
 .features-three {
   min-height: 256px;
-  min-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.map {
+  width: 1200px;
+  min-height: 593px;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  min-height: 120px;
+}
+
+.index .footer {
+  position: relative;
+  margin-top: -120px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hashtag {
+  width: 400px;
+  align-items: center;
+}
+
+.footer-social {
+  width: 400px;
+  align-items: center;
+}
+
+.footer-copyright {
+  width: 400px;
+  align-items: center;
+}
+
+/*inner*/
+
+.choose {
+  width: 1200px;
+}
+
+.infrastructure-form {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+}
+
+.home {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
 }
