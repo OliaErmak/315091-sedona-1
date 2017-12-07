@@ -99,11 +99,10 @@ a{
  }
 
 .sedona-logo {
-  background-image: url("../img/background-index.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/under-title.png") no-repeat 0px 450px,
+              url("../img/background-index.jpg") no-repeat;
   width: 100%;
   text-align: center;
-
 }
 
 .title {
@@ -499,9 +498,8 @@ color: #94b9d2;
    text-align: left;
  }
 
-/*паддинги*/
  .site-navigation li:nth-child(4n+2) {
-   margin-right: auto
+   margin-right: auto;
    text-align: left;
  }
 
@@ -532,13 +530,26 @@ color: #94b9d2;
  }
 
 .title {
+  margin: 0;
+  padding: 0;
   min-height: 216px;
 }
 
 .title b {
-  width: 440px;
-  align-self: center;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-top: 40px;
+  padding-left: 380px;
+  padding-right: 380px;
   margin-bottom: 40px;
+}
+
+.title p {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
 }
 
 .advantages {
@@ -561,28 +572,33 @@ color: #94b9d2;
 
 .feature {
   width: 400px;
+  min-height: 256px;
 }
 
-/*не надо*/
-.feature-one {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.feature .feature-name {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-top: 48px;
+  margin-bottom: 27px;
 }
 
-.feature-one b {
-  margin-left: 135px;
-  margin-right: 135px;
+.feature-one .feature-name {
+  padding-left: 135px;
+  padding-right: 135px;
 }
 
-.feature-one p:first-of-type {
-  margin-left: auto;
-  margin-right: auto;
+.feature p:first-of-type {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 175px;
+  padding-right: 175px;
 }
 
 .feature-one p:last-of-type {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 0;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .advice {
@@ -600,25 +616,106 @@ color: #94b9d2;
   padding-top: 150px;
 }
 
+/*добавила*/
+.advice-name {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.advice-item:first-of-type .advice-name {
+  margin-left: 165px;
+  margin-right: 167px;
+}
+
+.advice-item:first-of-type p {
+  margin: 0;
+  padding: 0 73px;
+}
+
+.advice-item:nth-of-type(2) .advice-name {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.advice-item:nth-of-type(2) p {
+  margin: 0;
+  padding: 0 57px;
+}
+
+.advice-item:nth-of-type(3) .advice-name {
+  margin-left: 148px;
+  margin-right: 148px;
+}
+
+.advice-item:nth-of-type(3) p {
+  margin: 0;
+  padding: 0 64px;
+}
+/**/
+
 .feature-two {
   order: 1;
 }
 
-.feature-two p:first-of-type {
+.feature-two p:last-of-type {
+  margin: 0;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.feature-three {
+  min-height: 256px;
+}
+
+/* -№3- */
+.feature-three:first-of-type .feature-name {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.feature-three:first-of-type p:first-of-type {
+  padding-left: 175px;
+  padding-right: 175px;
+}
+
+.feature-three:first-of-type p:nth-of-type(2) {
+  margin: 0;
+  padding-left: 95px;
+  padding-right: 95px
+}
+
+/* -№4- */
+.feature-three:nth-of-type(2) .feature-name {
+  padding-left: 149px;
+  padding-right: 149px;
+}
+
+.feature-three:nth-of-type(2) p:first-of-type {
   margin-left: auto;
   margin-right: auto;
 }
 
-.feature-two p:last-of-type {
-  margin-left: 55px;
-  margin-right: 45px;
+.feature-three:nth-of-type(2) p:nth-of-type(2) {
+  margin: 0;
+  padding-left: 65px;
+  padding-right: 65px
 }
 
-.features-three {
-  min-height: 256px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* -№5- */
+.feature-three:nth-of-type(3) .feature-name {
+  padding-left: 147px;
+  padding-right: 147px;
+}
+
+.feature-three:nth-of-type(3) p:first-of-type {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-three:nth-of-type(3) p:nth-of-type(2) {
+  margin: 0;
+  padding-left: 70px;
+  padding-right: 70px
 }
 
 .map {
@@ -636,7 +733,7 @@ color: #94b9d2;
   padding-top: 35px;
 }
 
-.index .footer {
+.index-page .footer {
   position: relative;
   margin-top: -120px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -647,15 +744,49 @@ color: #94b9d2;
   align-items: center;
 }
 
+.footer-copyright {
+  width: 400px;
+  align-items: center;
+  display: flex;
+}
+
+.footer-copyright a {
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
+}
+
 .footer-social {
   width: 400px;
   align-items: center;
 }
-
-.footer-copyright {
-  width: 400px;
-  align-items: center;
+/*добавила*/
+.social {
+  display: inline-block;
+  background-color: #81b3d2;
+  vertical-align: middle;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
 }
+
+.social-tw {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-yt {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 
 /*inner*/
 
