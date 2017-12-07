@@ -278,7 +278,7 @@ a{
 
   background-image: url("../img/background-inner.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 50%;
 }
 
 .infrastructure-form p {
@@ -429,46 +429,13 @@ color: #94b9d2;
   text-align: center;
 }
 
-.footer-social a {
-  background-color: #81b3d2;
-  color: #ffffff;
-}
-
-.footer-social a:hover {
-  background-color: #669ec0;
-}
-
-.footer-social a:focus {
-  background-color: #5496bd;
-  color: #88b6d1;
-}
-
-.footer-copyright {
-  text-align: center;
-}
-
-.footer-copyright a {
-  color: #000000;
-}
-
-.footer-copyright a:hover {
-  color: #81b3d2;
-}
-
-.footer-copyright a:focus {
-  color: #cacaca;
-}
-
-/*сеточные стили*/
-
 .container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2)
 }
 
 .page-header {
-   /*от хедера до логотипа седоны*/
-  /*для сетки*/
   min-height: 56px;
 }
 
@@ -616,10 +583,8 @@ color: #94b9d2;
   padding-top: 150px;
 }
 
-/*добавила*/
 .advice-name {
   display: inline-block;
-  margin-bottom: 25px;
 }
 
 .advice-item:first-of-type .advice-name {
@@ -651,7 +616,40 @@ color: #94b9d2;
   margin: 0;
   padding: 0 64px;
 }
-/**/
+
+.advice-item {
+  position: relative;
+}
+
+.advice-item:first-of-type::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-1.svg") no-repeat;
+  width: 75px;
+  height: 72px;
+  top: 60px;
+  left: 163px;
+}
+
+.advice-item:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-3.svg") no-repeat;
+  width: 74px;
+  height: 72px;
+  top: 60px;
+  left: 161px;
+}
+
+.advice-item:nth-of-type(3)::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-2.svg") no-repeat;
+  width: 64px;
+  height: 76px;
+  top: 56px;
+  left: 165px;
+}
 
 .feature-two {
   order: 1;
@@ -718,6 +716,38 @@ color: #94b9d2;
   padding-right: 70px
 }
 
+.interest {
+  width: 1200px;
+  min-height: 293px;
+  padding-top: 58px;
+}
+
+.interest b {
+  margin-left: 451px;
+  margin-right: 451px;
+}
+
+.interest p {
+  margin: 0;
+  margin-top: 36px;
+  margin-bottom: 54px;
+}
+
+.interest a {
+  display: block;
+  width: 568px;
+  height: 86px;
+  margin-left: 316px;
+  margin-right: 316px;
+  padding-left: 135px;
+  padding-right: 135px;
+  padding-top: 32px;
+}
+
+.search-hotel {
+  display: none;
+}
+
 .map {
   width: 1200px;
   min-height: 600px;
@@ -742,25 +772,38 @@ color: #94b9d2;
 .hashtag {
   width: 400px;
   align-items: center;
+  padding-top: 14px;
 }
 
 .footer-copyright {
   width: 400px;
-  align-items: center;
   display: flex;
+  padding-left: 100px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-right: 5px;
+  margin-top: 10px;
 }
 
 .footer-copyright a {
+  margin: 0;
+  margin-top: 4px;
   background: url("../img/logo-htmlacademy.svg") no-repeat;
 }
 
 .footer-social {
+  display: flex;
+  justify-content: center;
   width: 400px;
-  align-items: center;
+  margin: 0;
 }
-/*добавила*/
+
 .social {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #81b3d2;
   vertical-align: middle;
   width: 46px;
@@ -768,25 +811,38 @@ color: #94b9d2;
   margin-right: 6px;
 }
 
-.social-tw {
-  background-image: url("../img/twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+/*изменение цвета иконок соц*/
+.footer-social a {
+  background-color: #81b3d2;
 }
 
-.social-fb {
-  background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social a:hover {
+  background-color: #669ec0;
 }
 
-.social-yt {
-  background-image: url("../img/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social a:focus {
+  background-color: #5496bd;
 }
 
+.social:hover path {
+  fill: #ffffff;
+}
 
+.social:focus path {
+  fill: #88b6d1;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright a:hover path {
+  fill: #81b3d2;
+}
+
+.footer-copyright a:focus path {
+  fill: #cacaca;
+}
 
 /*inner*/
 
