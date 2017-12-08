@@ -1,4 +1,4 @@
-in*,
+*,
 *::before,
 *::after {
   box-sizing: inherit;
@@ -758,14 +758,12 @@ color: #94b9d2;
 то становится ок*/
 .interest a {
   display: block;
-  width: 568px;
-  height: 86px;
   margin-left: 316px;
   margin-right: 316px;
   padding-left: 135px;
   padding-right: 135px;
   padding-top: 29px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
 }
 
 .calendar:hover path {
@@ -813,21 +811,18 @@ color: #94b9d2;
 }
 
 .hashtag {
-  outline: 1px solid black;
   width: 400px;
   align-items: center;
-  padding-left: 24px;
   padding-top: 10px;
 }
 
 .footer-social {
-  outline: 1px solid black;
   display: flex;
   justify-content: center;
   width: 400px;
   margin: 0;
   padding-top: 1px;
-  padding-left: 64px;
+  padding-left: 4px;
 }
 
 .social {
@@ -863,17 +858,25 @@ color: #94b9d2;
 
 
 .footer-copyright {
-  outline: 1px solid black;
   width: 400px;
   display: flex;
   padding-left: 100px;
 }
 
+.inner-page .footer-copyright p {
+  margin-top: 17px;
+  margin-left: 2px;
+}
+
+.inner-page .footer-copyright a {
+  margin-top: 7px;
+}
+
 .footer-copyright p {
   margin: 0;
   margin-left: 1px;
-  margin-right: 8px;
-  margin-top: 11px;
+  margin-right: 9px;
+  margin-top: 12px;
 }
 
 .footer-copyright a {
@@ -909,26 +912,55 @@ color: #94b9d2;
   width: 1200px;
 }
 
+.infrastructure-form p {
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 25px;
+}
+
 .choose-infrastructure {
   width: 240px;
   margin-left: 71px;
-  outline: 1px solid black;
   padding-top: 11px;
 }
 
 .choose-infrastructure label {
   display: block;
+  cursor: pointer;
+  font-family: inherit;
+  position: relative;
+  margin-bottom: 26px;
+  margin-left: 41px;
 }
 
 .choose-type {
   width: 240px;
-  margin-left: 14px;
-  outline: 1px solid black;
+  margin-left: 15px;
   padding-top: 11px;
 }
 
 .choose-type label {
   display: block;
+  margin-bottom: 26px;
+  margin-left: 41px;
+  position: relative;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+
+.checkbox-img + label::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: -1px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+}
+.checkbox-img:checked + label::before {
+    background-image: url(../img/checkbox-on.svg);
 }
 
 .choose-price {
@@ -1042,7 +1074,7 @@ color: #94b9d2;
   display: block;
   margin-left: 85px;
   padding-top: 7px;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
   padding-left: 34px;
   padding-right: 34px;
   font-size: 14px;
@@ -1063,7 +1095,7 @@ color: #94b9d2;
 
 .sort {
   width: 1200px;
-  min-height: 85px;
+  min-height: 86px;
   display: flex;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1127,6 +1159,7 @@ color: #94b9d2;
   min-height: 121px;
   display: flex;
   padding-left: 71px;
+  padding-bottom: 29px;
   padding-top: 29px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1147,15 +1180,11 @@ color: #94b9d2;
 }
 
 .home:nth-of-type(2) .home-variant {
-  margin-top: 1px;
+  margin-top: -1px;
 }
 
 .home:nth-of-type(3) img {
-  margin-top: 2px;
-}
-
-.home:nth-of-type(3) .home-variant {
-  margin-top: 3px;
+  margin-top: 1px;
 }
 
 .home:nth-of-type(3) .main-info {
@@ -1185,8 +1214,8 @@ color: #94b9d2;
   padding: 4px 17px;
 }
 
-.home:nth-of-type(2) .main-info {
-  margin-top: -1px;
+.home:nth-of-type(2) .main-info p {
+  margin-top: 1px;
 }
 
 .home:nth-of-type(3) .main-info {
