@@ -571,13 +571,13 @@ color: #94b9d2;
 
   display: flex;
   width: 1200px;
-  min-height: 331px;
+  min-height: 330px;
 }
 
 .advice-item {
   width: 400px;
-  min-height: 330px;
   padding-top: 150px;
+  /*здесь убрала Min-height: 330px*/
 }
 
 .advice-name {
@@ -735,10 +735,12 @@ color: #94b9d2;
   padding-right: 70px
 }
 
+/*здесь когда убираю min0height
+то ужимается как нужно*/
 .interest {
   width: 1200px;
   min-height: 291px;
-  padding-top: 50px;
+  padding-top: 51px;
 }
 
 .interest b {
@@ -752,6 +754,8 @@ color: #94b9d2;
   margin-bottom: 47px;
 }
 
+/*здесь если убираю width и min-height
+то становится ок*/
 .interest a {
   display: block;
   width: 568px;
@@ -761,13 +765,14 @@ color: #94b9d2;
   padding-left: 135px;
   padding-right: 135px;
   padding-top: 29px;
+  padding-bottom: 30px;
 }
 
 .calendar:hover path {
     fill: #000000;
 }
-.calendar:
- path {
+
+.calendar:active path {
     fill: #81b3d2;
 }
 /*
@@ -784,7 +789,6 @@ color: #94b9d2;
 .map {
   width: 1200px;
   min-height: 595px;
-  position: relative;
 }
 
 .footer {
@@ -795,46 +799,35 @@ color: #94b9d2;
   flex-direction: row;
   min-height: 120px;
   padding-top: 35px;
+
+}
+
+.search-hotel {
+  display: none;
 }
 
 .index-page .footer {
   position: relative;
-  margin-top: -129px;
+  margin-top: -128px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .hashtag {
+  outline: 1px solid black;
   width: 400px;
   align-items: center;
-  padding-left: 1px;
+  padding-left: 24px;
   padding-top: 10px;
 }
 
-.footer-copyright {
-  width: 400px;
-  display: flex;
-  padding-left: 100px;
-}
-
-.footer-copyright p {
-  margin: 0;
-  margin-left: 1px;
-  margin-right: 8px;
-  margin-top: 11px;
-}
-
-.footer-copyright a {
-  margin: 0;
-  margin-top: 4px;
-}
-
 .footer-social {
+  outline: 1px solid black;
   display: flex;
   justify-content: center;
   width: 400px;
   margin: 0;
-  margin-left: 4px;
-  margin-top: 1px;
+  padding-top: 1px;
+  padding-left: 64px;
 }
 
 .social {
@@ -866,6 +859,26 @@ color: #94b9d2;
 
 .social:focus path {
   fill: #88b6d1;
+}
+
+
+.footer-copyright {
+  outline: 1px solid black;
+  width: 400px;
+  display: flex;
+  padding-left: 100px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-left: 1px;
+  margin-right: 8px;
+  margin-top: 11px;
+}
+
+.footer-copyright a {
+  margin: 0;
+  margin-top: 4px;
 }
 
 .footer-copyright {
@@ -926,6 +939,10 @@ color: #94b9d2;
   color: #ffffff;
   text-transform: uppercase;
   box-sizing: content-box;
+}
+
+.choose-price input {
+  font-family: inherit;
 }
 
 .choose-price-title {
@@ -1109,7 +1126,6 @@ color: #94b9d2;
   padding: 0;
   min-height: 121px;
   display: flex;
-  width: 1200px;
   padding-left: 71px;
   padding-top: 29px;
   border-bottom: 1px solid #e5e5e5;
@@ -1180,9 +1196,33 @@ color: #94b9d2;
 .rating {
   margin-left: auto;
   margin-right: 73px;
-  outline: 1px solid black;
   width: 110px;
 }
 
 .rating-stars {
+  margin: 0;
+  height: 30px;
+  background: url("../img/star.svg") space;
+}
+
+.home:first-of-type .rating-stars {
+  margin-left: 23px;
+  width: 86px;
+}
+
+.home:nth-of-type(2) .rating-stars {
+  margin-left: 45px;
+  width: 64px;
+}
+
+.home:nth-of-type(3) .rating-stars {
+  margin-left: 67px;
+  width: 43px;
+}
+
+.rating-value {
+  margin: 0;
+  margin-top: 35px;
+  padding-left: 14px;
+  padding-top: 2px;
 }
