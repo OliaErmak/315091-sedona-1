@@ -1,4 +1,4 @@
-*,
+in*,
 *::before,
 *::after {
   box-sizing: inherit;
@@ -99,8 +99,8 @@ a{
  }
 
 .sedona-logo {
-  background: url("../img/under-title.png") no-repeat 0px 450px,
-              url("../img/background-index.jpg") no-repeat;
+  background: url("../img/under-title.png") no-repeat bottom,
+              url("../img/background-index.jpg") no-repeat 50% 21%;
   width: 100%;
   text-align: center;
 }
@@ -766,7 +766,8 @@ color: #94b9d2;
 .calendar:hover path {
     fill: #000000;
 }
-.calendar:active path {
+.calendar:
+ path {
     fill: #81b3d2;
 }
 /*
@@ -1026,7 +1027,7 @@ color: #94b9d2;
   padding-top: 7px;
   padding-bottom: 5px;
   padding-left: 34px;
-  padding-right: 28px;
+  padding-right: 34px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -1035,6 +1036,7 @@ color: #94b9d2;
   border: 1px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .choose-price-btn:hover {
@@ -1044,7 +1046,7 @@ color: #94b9d2;
 
 .sort {
   width: 1200px;
-  min-height: 87px;
+  min-height: 85px;
   display: flex;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1060,62 +1062,68 @@ color: #94b9d2;
   padding-top: 36px;
 }
 
-.sort a:first-of-type {
-  padding-left: 40px;
-  padding-top: 36px;
+.sort-by {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 40px;
+  margin-top: 33px;
 }
 
-.sort a:nth-of-type(2),
-.sort a:nth-of-type(3)
+.sort-by li:nth-of-type(2),
+.sort-by li:nth-of-type(3)
 {
-  padding-left: 33px;
-  padding-top: 36px;
+  margin-left: 33px;
 }
 
-.sort a:nth-of-type(4) {
-  padding-top: 36px;
-  margin-left: 502px;
+.triangle {
+  border: none;
+  margin-left: 503px;
+  margin-top: 34px;
 }
 
-.sort a:nth-of-type(5) {
-  padding-top: 35px;
-  margin-left: 14px;
+.triangle a {
+  border: none;
 }
 
-.sort path {
+.triangle a:nth-of-type(2) {
+  margin-left: 9px;
+}
+
+.triangle path {
   fill: #e5e5e5;
 }
 
-.sort path:hover {
+.triangle path:hover {
   fill: #231f20;
 }
 
-.sort path:focus,
-.sort .active path {
+.triangle path:focus,
+.triangle-active path {
   fill: #81b3d2;
 }
 
 .home {
   margin: 0;
   padding: 0;
-  padding-top: 29px;
-  min-height: 150px;
+  min-height: 121px;
   display: flex;
-  flex-direction: row;
   width: 1200px;
   padding-left: 71px;
+  padding-top: 29px;
   border-bottom: 1px solid #e5e5e5;
-}
-
-.home-variant h2 {
-  margin: 0;
-  padding-left: 1px;
-  margin-top: -6px;
 }
 
 .home-variant {
   padding-left: 29px;
-  width: 260px;
+  width: 300px;
+}
+
+.home-variant h2 {
+  margin: 0;
+  margin-left: 1px;
+  margin-top: -5px;
 }
 
 .home:nth-of-type(2) img {
@@ -1157,26 +1165,16 @@ color: #94b9d2;
 
 .main-info a {
   display: inline-block;
-  width: 110px;
-  height: 27px;
-  margin-top: 14px;
+  margin-top: 13px;
+  padding: 4px 17px;
 }
 
-.main-info .order-btn {
-  display: inline-block;
-  width: 142px;
-  height: 27px;
-  margin-top: 14px;
+.home:nth-of-type(2) .main-info {
+  margin-top: -1px;
 }
 
-.variant-description a {
-  padding-left: 17px;
-  padding-top: 4px;
-}
-
-.order-btn {
-  padding-left: 17px;
-  padding-top: 4px;
+.home:nth-of-type(3) .main-info {
+  margin-top: -1px;
 }
 
 .rating {
@@ -1184,7 +1182,6 @@ color: #94b9d2;
   margin-right: 73px;
   outline: 1px solid black;
   width: 110px;
-  height: 27px;
 }
 
 .rating-stars {
