@@ -764,36 +764,38 @@ color: #94b9d2;
   padding-bottom: 31px;
 }
 
-.calendar:hover path {
-    fill: #000000;
-}
-
-.calendar:active path {
-    fill: #81b3d2;
-}
-
 .search-hotel {
   position: absolute;
   background-color: #ffffff;
-  left: 318px;
+  left: 316px;
   top: 292px;
   height: 424px;
   margin: 0 auto;
-  width: 565px;
+  width: 568px;
   min-height: 395px;
-  padding: 55px;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
 }
 
-.search-form-group {
-  margin-bottom: 34px;
+.form-content {
+  padding: 56px 55px;
+  min-height: 285px;
 }
 
-.search-form-group label {
-  margin: 0;
-  padding: 0;
+.search-form-group {
+  margin-bottom: 37px;
+  position: relative;
+}
+
+.search-form-group label.date-in {
   margin-right: 20px;
   margin-bottom: 32px;
+  font-style: inherit;
+}
+
+.search-form-group label.date-out {
+    margin-right: 16px;
+    margin-bottom: 32px;
+    font-style: inherit;
 }
 
 .search-hotel-form input[type="text"] {
@@ -810,8 +812,8 @@ color: #94b9d2;
   font-size: 14px;
 }
 
-.search-form-group label.date-out {
-    margin-right: 16px;
+.search-form-group:nth-of-type(2) {
+  margin-bottom: 43px;
 }
 
 .calendar {
@@ -823,18 +825,41 @@ color: #94b9d2;
   background-color: #f2f2f2;
 }
 
+.calendar:hover path {
+    fill: #000000;
+}
+
+.calendar:active path {
+    fill: #81b3d2;
+}
+
 .search-form-group:nth-of-type(2) .calendar {
-  top: 9px;
+  top: 7px;
 }
 
-.search-form-group:nth-of-type(3),
-.search-form-group:nth-of-type(4) {
-    display: inline-block;
-    margin-bottom: 55px;
+.feef,
+.weew {
+  display: inline-block;
+  margin-bottom: 55px;
+  width: 210px;
 }
 
-.search-form-group:nth-of-type(3) input[type="text"] {
-  width: 115px;
+.feef input[type="text"] {
+  width: 114px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.weew input[type="text"] {
+  width: 114px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.input-adults,
+.input-kids {
+  width: 114px;
+  position: relative;
 }
 
 .map {
@@ -850,7 +875,6 @@ color: #94b9d2;
   flex-direction: row;
   min-height: 120px;
   padding-top: 35px;
-
 }
 
 .index-page .footer {
