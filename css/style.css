@@ -794,6 +794,10 @@ a {
 .map {
     width: 1200px;
     min-height: 595px;
+    border: none;
+}
+.iframe-index {
+  border: none;
 }
 .footer {
     margin: 0;
@@ -1003,8 +1007,7 @@ a {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
-    line-height: 38px;
-    height: 32px;
+    line-height: 32px;
     cursor: pointer;
 }
 .price-controls .min-price {
